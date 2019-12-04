@@ -232,7 +232,7 @@ def most_points_scored
   game_hash.each do |location, team|
     players = team[:players]
     players.each do |player|
-      if player == highest_score
+      if player[:points] == highest_score
         return player[:player_name]
       end
     end
