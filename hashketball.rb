@@ -218,6 +218,13 @@ game_hash.each do |location, team|
  end 
 end 
 end
+
+def most_points_scored
+  points = []
+  game_hash.each do |location, team|
+    players = team[:players]
+    players.each do |player|
+      points << player[:points]
    
         
       
