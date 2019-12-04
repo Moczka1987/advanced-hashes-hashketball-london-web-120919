@@ -225,6 +225,10 @@ def most_points_scored
     players = team[:players]
     players.each do |player|
       points << player[:points]
+    end
+  end
+  
+  
    
         
       
