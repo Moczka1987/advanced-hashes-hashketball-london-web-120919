@@ -232,7 +232,7 @@ def most_points_scored
   hames_hash.each do |location, team|
     players = team[:players]
     players.each do |player|
-      if player == highest_score_score
+      if player == highest_score
         return player[:player_name]
       end
     end
