@@ -228,6 +228,18 @@ def most_points_scored
     end
   end
   
+  highest_score = points.max 
+  hames_hash.each do |location, team|
+    players = team[:players]
+    players.each do |player|
+      if player == highest_score_score
+        return player[:player_name]
+      end
+    end
+  end
+end
+end
+
   
    
         
