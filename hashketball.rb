@@ -229,7 +229,7 @@ def most_points_scored
   end
   
   highest_score = points.max 
-  games_hash.each do |location, team|
+  game_hash.each do |location, team|
     players = team[:players]
     players.each do |player|
       if player == highest_score
