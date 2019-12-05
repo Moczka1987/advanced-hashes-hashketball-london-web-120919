@@ -243,8 +243,17 @@ def winning_team
   score_BN = 0
 game_hash.each do |location, team|
 if team[:team_name] == "Brooklyn Nets"
-  team[:team_name].each do |players|
-    
+  team.each do |players|
+    score_BN += players[:points]
+  end
+end
+
+score_CH = 0
+game_hash.each do |location, team|
+  if team[:team_name] == "Charlotte Hornets"
+    team.each do |players|
+      score_CH +
+
    
         
       
