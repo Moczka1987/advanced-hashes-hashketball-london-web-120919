@@ -265,7 +265,15 @@ def player_with_longest_name
 end
  
  def most_steals
-   
+   game_hash.each do |location, team|
+    players = team[:players]
+    players.each do |player|
+      if player[:points] == highest_score
+        return player[:player_name]
+      end
+    end
+  end
+end
  
 def long_name_steals_a_ton
   
