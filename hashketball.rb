@@ -278,14 +278,15 @@ end
     players = team[:players]
     players.each do |player|
       if player[:steals] == highest_steals
-        return player[:player_name]
+         return player[:player_name]
       end
     end
   end
 end
  
 def long_name_steals_a_ton
-  
+  most_steals == player_with_longest_name
+end
 
 
         
