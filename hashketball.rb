@@ -240,8 +240,9 @@ def most_points_scored
 end
 
 def winning_team 
+  score_BN = 0
+game_hash.each do |location, team|
 
-  
    
         
       
