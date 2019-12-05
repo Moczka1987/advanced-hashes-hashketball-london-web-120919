@@ -264,7 +264,7 @@ def player_with_longest_name
   name_array.sort_by{|name| name.length}.last
 end
  
- def most_steals
+ def long_name_steals_a_ton
   steals = []
   game_hash.each do |location, team|
     players = team[:players]
@@ -277,16 +277,13 @@ end
   game_hash.each do |location, team|
     players = team[:players]
     players.each do |player|
-      if player[:steals] == highest_steals
+      if player[:steals] == highest_steals && 
          return player[:player_name]
       end
     end
   end
 end
  
-def long_name_steals_a_ton
-  most_steals == player_with_longest_name
-end
 
 
         
