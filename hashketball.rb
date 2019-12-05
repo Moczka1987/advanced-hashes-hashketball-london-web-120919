@@ -255,6 +255,7 @@ game_hash.each do |location, team|
       score_CH += players[:points]
     end
   end 
+end
   
   if score_BN > score_CH
     return "Brooklyn Nets"
