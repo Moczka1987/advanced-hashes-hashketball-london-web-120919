@@ -252,7 +252,12 @@ score_CH = 0
 game_hash.each do |location, team|
   if team[:team_name] == "Charlotte Hornets"
     team.each do |players|
-      score_CH +
+      score_CH += players[:points]
+    end
+  end 
+  
+  if scored_BN > score_CH
+    return 
 
    
         
