@@ -250,8 +250,6 @@ game_hash[:home][:players].each { |attribute| score_CH += attribute[:points]}
     return "Brooklyn Nets"
   else
     return "Charlotte Hornets"
-  end
-end
 end
 end
 
