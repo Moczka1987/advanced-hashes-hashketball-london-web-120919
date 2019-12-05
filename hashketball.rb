@@ -254,7 +254,8 @@ end
 end
 
 def player_with_longest_name
-  
+  game_hash.each do |location, teams|
+    teams
    
         
       
