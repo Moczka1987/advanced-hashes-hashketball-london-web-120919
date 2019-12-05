@@ -253,7 +253,7 @@ game_hash[:away][:players].each { |attribute| score_CH += attribute[:points]}
 end
 end
 
-
+def player_with_longest_name
    
         
       
