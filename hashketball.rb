@@ -253,6 +253,7 @@ game_hash[:home][:players].each { |attribute| score_CH += attribute[:points]}
   end
 end
 end
+end
 
 
    
