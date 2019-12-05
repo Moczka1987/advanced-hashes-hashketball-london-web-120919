@@ -241,7 +241,8 @@ end
 
 def winning_team 
   score_BN = 0
-game_hash.each do |location, team|
+game_hash[:home][:pl]
+each do |location, team|
 if team[:team_name] == "Brooklyn Nets"
   team.each do |players|
     score_BN += players[:points]
