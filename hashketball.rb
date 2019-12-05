@@ -260,7 +260,7 @@ def player_with_longest_name
     name_array << player[:player_name]
   end
 end
-   name_array.each {|name| name.length}
+   name_array.collect {|name| name.length}
         
       
 
