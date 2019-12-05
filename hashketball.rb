@@ -269,7 +269,7 @@ end
   game_hash.each do |location, team|
     players = team[:players]
     players.each do |player|
-      points << player[:steals]
+      steals << player[:steals]
     end
   end
   
