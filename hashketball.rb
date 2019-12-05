@@ -262,6 +262,7 @@ game_hash.each do |location, team|
     return "Charlotte Hornets"
   end
 end
+end
 
 
    
