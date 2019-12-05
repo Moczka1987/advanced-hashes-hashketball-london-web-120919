@@ -257,7 +257,12 @@ game_hash.each do |location, team|
   end 
   
   if scored_BN > score_CH
-    return 
+    return "Brooklyn Nets"
+  else
+    return "Charlotte Hornets"
+  end
+end
+
 
    
         
