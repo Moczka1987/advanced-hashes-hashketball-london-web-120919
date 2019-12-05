@@ -258,7 +258,7 @@ def player_with_longest_name
   game_hash.each do |location, teams|
     teams[:players].each |player|
     name_array << player[:player_name]
-   name_array.sort_by{|name| name.length}.last
+    name_array.sort_by{|name| name.length}.last
 end
 end
 end
