@@ -265,10 +265,19 @@ def player_with_longest_name
 end
  
  def most_steals
-   game_hash.each do |location, team|
+  steals = []
+  game_hash.each do |location, team|
     players = team[:players]
     players.each do |player|
-      if player[:points] == highest_score
+      points << player[:steals]
+    end
+  end
+  
+  highest_steals = steals.max 
+  game_hash.each do |location, team|
+    players = team[:players]
+    players.each do |player|
+      if player[:steals] == highest_steals
         return player[:player_name]
       end
     end
