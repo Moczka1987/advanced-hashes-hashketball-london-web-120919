@@ -277,8 +277,8 @@ end
   game_hash.each do |location, team|
     players = team[:players]
     players.each do |player|
-      if player[:steals] == highest_steals && 
-         return player[:player_name]
+      if player[:steals] = highest_steals && player_with_longest_name
+         return true
       end
     end
   end
