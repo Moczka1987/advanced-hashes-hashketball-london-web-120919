@@ -261,7 +261,7 @@ def player_with_longest_name
   end
 end
    name_array.sort_by{|name| name.length}.last
- end
+end
 
         
       
